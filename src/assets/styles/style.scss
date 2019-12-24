@@ -1,0 +1,495 @@
+@import "var.scss";
+@import "mixins.scss";
+
+html{
+    width: 100%;
+    height: 100%;
+    font-family: $font;
+    display: $disp;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.inner_header{
+    background-color: $sbcol;
+    display: $disp;
+    width: 18.75vw;
+    height: 100vh;
+    position: $pos;
+}   
+
+.logoimg{
+    width: 16vw;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    position: $pos;
+    display: block;
+}
+
+.logoimg::before{  
+    content: "";
+    background-image: url(../img/Logo@3x.svg);
+    width: 2vw;
+    height: 3vh;
+    position: $pos;
+    background-repeat: no-repeat;
+}
+
+.pname{
+    color: white;
+    position: $pos;
+    display: block  ;
+    margin-top: 5vh;
+    margin-left: 6vw;
+    font-size: 1.2vw;
+}
+
+.search::before{
+    content: "";
+    background-image: url(../img/search-solid.svg);
+    width: 2vw;
+    height: 2vh;
+    position: $pos;
+    background-repeat: no-repeat;
+    margin-left: 16vw;
+    margin-top: 5vh;
+}
+
+.log_in{
+    height: 10vh;
+    width: 18.77vw;
+    background-color: $lbcol;
+    position: $pos;
+    margin-top: 12vh;
+}
+
+.acc_pto{
+    background-image: url(../img/acc.jpg);
+    height: 6vh;
+    width: 6vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    position: $pos;
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+
+.user_name{
+    margin-left: 7vw;
+    margin-top: 3vh;
+    position: $pos;
+    font-size: 1vw;
+    color: white;
+}
+
+.user_level{
+    margin-left: 7vw;
+    margin-top: 6vh;
+    position: $pos;
+    color: #aaaaaa;
+    font-size: 1vw;
+}
+
+.icon{
+    margin-left: 16vw;
+    margin-top: 3.1vh;
+    position: $pos;
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: #aaaaaa;
+}
+
+.side_nav{
+    display: $disp;
+    position: $pos;
+    width: 18.77vw;
+    margin-top: 23vh;
+}
+
+.CMT{
+    display: flex;
+}
+
+.cnt_com_tks{
+    display: block;
+    margin-top: 1vw;
+    margin-left: 2.3vw;
+    color: white;
+    font-size: 3vh;
+}
+
+.cmp_tsk{
+    position: $pos;
+    margin-top: 3vw;
+    display: block;
+    margin-left: 2.3vw;
+    font-size: 1.8vh;
+    color: #aaaaaa ;
+}
+
+.OPT{
+    display: $disp;
+}
+
+.cnt_opn_tsk{
+    position: $pos;
+    display: block;
+    margin-top: 1vw;
+    margin-left: 7vw;
+    color: white;
+    font-size: 3vh;
+}
+
+.opn_tsk{
+    position: $pos;
+    display: block;
+    margin-top: 3vw;
+    margin-left: 7vw;
+    font-size: 1.8vh;
+    color: #aaaaaa ;
+}
+
+.side_menu_nav{
+    margin-top: 6vw;
+    margin-left: 2.3vw;
+    position: $pos;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #6b6a6a;
+    font-size: 2vh;
+}
+
+.side_home_nav{
+    margin-top: 8vw;
+    @include sidenav;
+}
+
+.side_tsk_nav{
+    @include sidenav;
+    margin-top: 10vw;
+}
+
+.side_ntfc_nav{
+    @include sidenav;
+    margin-top: 12vw;
+}
+
+.ntfc {
+    position: absolute;
+    background-color: #ffc200;
+    border-radius: 50%;
+    margin-left: 6em;
+    top: 0em;
+    text-align: center;
+    background-size: auto;
+    color: black;
+    padding: 3.5px 7px 3.5px 7px; 
+}
+  
+
+.content {
+    width: 81.25vw;
+    height: 17vh;
+    display: flex;
+    margin-left: 18.75vw;
+    position: $pos;
+    background-color: white;
+}
+
+.wrapper{
+    display: $disp;
+}
+
+.tittle_text::before{
+    content: "";
+    background-image: url(../img/Shapes@2x.png);
+    background-color: $ambr;
+    width: 3vw;
+    height: 3vw;
+    background-repeat: no-repeat;
+    border-radius: 15%;
+    background-size: cover;
+    display: $disp;
+    margin-right: 1vw;
+}
+
+.tittle_text{
+    margin-top: 3.3vw;
+    margin-left: 2vw;
+    position: $pos;
+    display: $disp;
+}
+
+.toggle_btn{
+    content: '';
+    background-image: url(../img/hmenu.png);
+    width: 30px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    border: 0px;
+    margin-left: 2em;
+    color: #aaaaaa;
+    margin-top: 0.5em;
+    background-size: cover;
+    background-color: #EAEAEA;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+.humns{
+    display: $disp;
+}
+
+.first_human{
+    @include humans;
+    background-image: url(../img/joey-degrandis-hsam-memory.jpg);
+    margin-left: 60vw;
+}
+
+.second_human{
+    @include humans;
+    background-image: url(../img/woman.jpg);
+    margin-left: 62.5vw;
+}   
+.thirthd_human{
+    @include humans;
+    background-image: url(../img/images.jpg);
+    margin-left: 65vw;
+}
+
+.btn{
+    display: $disp;
+    margin-left: 68vw;
+    margin-top: 3.8vw;
+}
+
+.shr{
+    border-radius: 1vw;
+    width: 4.5vw;
+    height: 3.5vh;
+    font-size: 1vw;
+    text-decoration: none;
+    border: 0px;
+}
+
+.cht{
+    margin-left: 1em;
+    color: #FFC200;
+    background: #FFF8DD;
+    border-radius: 1vw;
+    width: 5.5vw;
+    height: 3.5vh;
+    font-size: 1vw;
+    border: 0px;
+}
+
+.cht::before{
+    content: '';
+    background-image: url(../img/comments-solid.svg);
+    float: left;
+    display: block;
+    width: 1vw;
+    height: 1vw;
+    margin-left: 1vw;
+}
+
+nav{
+    position: absolute;
+    top: 7vw;
+    left: 2vw;
+}
+
+.main_nav{
+    display: $disp;
+}
+
+.tsk{
+    @include topnav;
+}
+
+.kbn{
+    @include topnav;
+    margin-left: 2vw;
+}
+
+.act{
+    @include topnav;
+    margin-left: 2vw;
+}
+
+.cal{
+    @include topnav;
+    margin-left: 2vw;
+}
+
+.fls{
+    @include topnav;
+    margin-left: 2vw;
+}
+
+.main_content{
+    position: absolute;
+    margin-left: 18.75vw;
+    top: 9.5vw;
+    width: 81.25vw;
+    font-size: 100%;
+    border: 0;
+    height: 80vh;
+    background-color: rgb(238, 235, 228);
+}
+
+.inner_cont{
+    position: absolute;
+    margin-top: 3.5vh;
+    margin-left: 15vw;
+    background-color: #ffffff;
+    width: 51vw;
+    height: 70vh;
+    border-radius: 15px;
+}
+
+.tdy{
+    margin-left: 2vw;
+    margin-top: 2vw;
+    text-transform: uppercase;
+    font-size: 1vw;
+    color: #aaaaaa;
+}
+
+.usr_cmt{
+    font-size: 1.1vw;
+    margin-left: 2.5vw;
+    margin-top: 2vw;
+    display: $disp;
+}
+
+.usr_cmt::before{
+    content: '';
+    background-image: url(../img/Icon@3x.svg);
+    width: 2.7vw;
+    height: 2.7vw;
+    background-color: #CEF9C6;
+    background-size: 1vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: $disp;
+    border-radius: 50%;
+    margin-right: 1.6vw;
+}
+
+.usr_cmt::after{
+    content: '8:40 PM';
+    margin-left: 7vw;
+    margin-top: 0.5vw;
+    color: #6d6d6d;
+    font-size: 1vw;
+}
+
+.comment_1{
+    font-size: 1.1vw;
+    margin-left: 2.5vw;
+    margin-top: 2vw;
+    display: $disp;
+}
+
+.comment_1::before{
+    content: '';
+    background-image: url(../img/comment-alt-solid.svg);
+    width: 2.7vw;
+    height: 2.7vw;
+    background-color: #FFF8DD;
+    background-size: 1vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: $disp;
+    border-radius: 50%;
+    margin-right: 1.6vw;
+}
+
+.comment_1::after{
+    content: '7:32 PM';
+    margin-left: 8.3vw;
+    margin-top: 0.5vw;
+    color: #6d6d6d;
+    font-size: 1vw;
+}
+
+.post2{
+    background-color: #F7F6F3;
+    border-radius: 1vw;
+    width: 33vw;
+    height: 8vh;
+    margin-left: 7vw;
+    margin-top: 2vh;
+    padding:  2vh;
+}
+
+.post_2{
+    display: flex;
+    margin-left: 1vw;
+    padding-top: 1vw;
+    font-size: 1vw;
+}
+
+.upload{
+    display: $disp;
+}
+
+.upload_post{
+    font-size: 1.1vw;
+    margin-left: 2.5vw;
+    margin-top: 2vw;
+    display: $disp;
+}
+
+.upload_post::before{
+    content: '';
+    background-image: url(../img/upload-solid.svg);
+    width: 2.7vw;
+    height: 2.7vw;
+    background-color: #E3EFFF;
+    background-size: 1vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: $disp;
+    border-radius: 50%;
+    margin-right: 1.6vw;
+}
+
+.upload_post::after{
+    content: '6:02 PM';
+    margin-left: 8.9vw;
+    margin-top: 0.5vw;
+    color: #6d6d6d;
+    font-size: 1vw;
+}
+
+.la{
+    background-image: url(../img/LA.jpg);
+    @include imgs;
+    margin-left: 7vw;
+}
+
+.ny{
+    background-image: url(../img/new_york.jpeg);
+    @include imgs;
+    margin-left: 15vw;
+}
+
+.lublin{
+    background-image: url(../img/Lublin.jpg);
+    @include imgs;
+    margin-left: 23vw;
+}
+
+.norway{
+    background-image: url(../img/norway.jpg);
+    @include imgs;
+    margin-left: 31vw;
+}

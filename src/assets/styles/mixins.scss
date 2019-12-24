@@ -1,0 +1,98 @@
+@import "var.scss";
+
+@mixin topnav {
+    color: #7a7a7a;
+    text-align: center;
+    padding-bottom: 12px;
+    font-size: 1.2vw;
+    text-decoration: none;
+    height: 3vh;
+
+    &:hover{
+    border-bottom: 2px solid;
+    border-color: #ffc200;
+    color: #131313;
+    }
+}
+
+@mixin humans {
+    border-radius: 50%;
+    height: 2.25vw;
+    width: 2.25vw;
+    margin-top: 3.6vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: $pos;
+    background-position: center;
+}
+
+@mixin sidenav {
+    margin-left: 2.3vw;
+    position: $pos;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    font-size: 2vh;
+}
+@mixin imgs {
+    position: $pos;
+    margin-top: 6vw;
+    margin-left: 0.7vw;
+    border-radius: 8%;
+    height: 7vw;
+    width: 7vw;
+    background-size: cover;
+    display: block;
+}
+
+@mixin mhumns {
+    border-radius: 50%;
+    height: 4vw;
+    width: 4vw;
+    margin-top: 1vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: $pos;
+    background-position: center;
+}
+
+@mixin mtopnv {
+    color: #7a7a7a;
+    text-align: center;
+    padding-bottom: 12px;
+    font-size: 2vw;
+    text-decoration: none;
+    height: 3vh;
+
+    &:hover{
+    border-bottom: 2px solid;
+    border-color: #ffc200;
+    color: #131313;
+    }
+}
+
+@mixin mimgs {
+    position: $pos;
+    margin-top: 8vw;
+    margin-left: 0.7vw;
+    border-radius: 8%;
+    height: 12vw;
+    width: 12vw;
+    background-size: cover;
+    display: block;
+}
+
+@mixin mtopnv3 {
+    color: #7a7a7a;
+    text-align: center;
+    padding-bottom: 12px;
+    font-size: 5vw;
+    text-decoration: none;
+    height: 3vh;
+
+    &:hover{
+    border-bottom: 2px solid;
+    border-color: #ffc200;
+    color: white;
+    }
+}
